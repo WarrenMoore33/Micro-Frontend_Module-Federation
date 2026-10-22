@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import "remixicon/fonts/remixicon.css";
+
 import "./index.css";
 
 import Header from "home/Header";

@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from "react";
 
+import Login from "./Login";
 import { login, jwt } from "./cart";
 
 export default function CartContent() {
   const [token, setToken] = useState("");
 
   useEffect(() => {
+    // Subscribe to the jwt BehaviorSubject to get the latest token value
     const subscription = jwt.subscribe((val) => setToken(val ?? ""));
-    login("sally", "123");
     return () => subscription.unsubscribe();
   }, []);
 
-  return <div>JWT: {token}</div>;
+  return (
+    <div>
+      <div>JWT:</div> {token}
+      <Login />
+    </div>
+  );
 }
