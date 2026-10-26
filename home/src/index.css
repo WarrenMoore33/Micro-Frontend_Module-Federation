@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@source "../../cart/src/index.css";
+@source "../../pdp/src/index.css";
+
+input {
+    color: #333;
+}
+.flex-end div {
+    color: black;
+}

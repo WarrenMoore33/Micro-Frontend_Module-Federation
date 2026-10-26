@@ -1,1 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+/* Include shared libraries */
+@source "../../../libs";
+
+/* Include remote applications */
+@source "../../home/src/index.css";
+@source "../../pdp/src/index.css";

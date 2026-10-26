@@ -2,6 +2,8 @@ import React from "react";
 
 import { login, useLoggedIn } from "./cart";
 
+import "./index.css";
+
 export default function Login() {
   const loggedIn = useLoggedIn();
   const [showLogin, setShowLogin] = React.useState(false);
@@ -19,7 +21,7 @@ export default function Login() {
       {showLogin && (
         <div
           className="absolute p-5 border-4 border-blue-800 bg-white rounded-md shadow-lg"
-          style={{ width: 300, top: "2rem" }}
+          style={{ width: 300, top: "4rem", right: "70px" }}
         >
           <input
             type="text"

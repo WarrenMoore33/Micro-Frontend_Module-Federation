@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+@source "../../home/src/index.css";
+@source "../../cart/src/index.css";
