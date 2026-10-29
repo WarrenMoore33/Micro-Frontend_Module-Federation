@@ -16,5 +16,6 @@ export const mfConfig = {
     "./cart": "./src/cart.jsx",
     "./Login": "./src/Login.jsx",
     "./MiniCart": "./src/MiniCart.jsx",
+    "./CartContent": "./src/CartContent.jsx",
   },
 };

@@ -10,6 +10,7 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
+    "allowJs": true,
     "useDefineForClassFields": true,
     "allowImportingTsExtensions": true,
     "paths": {

@@ -1,7 +1,12 @@
 export const mfConfig = {
   name: "pdp",
   filename: "remoteEntry.js",
-  exposes: {},
+  dev: {
+    disableHotTypesReload: true,
+  },
+  exposes: {
+    "./PDPContent": "./src/PDPContent.jsx",
+  },
   shared: ["react", "react-dom"],
   remotes: {
     home: "home@http://localhost:3000/remoteEntry.js",

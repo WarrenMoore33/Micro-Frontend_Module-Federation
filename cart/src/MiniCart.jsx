@@ -11,7 +11,8 @@ export default function MiniCart() {
 
   useEffect(() => {
     setItems(cart.value?.cartItems);
-    return cart.subscribe((val) => setItems(val?.cartItems));
+    const subscription = cart.subscribe((value) => setItems(value?.cartItems));
+    return () => subscription.unsubscribe();
   }, []);
 
   const handleClearCart = () => {

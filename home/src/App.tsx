@@ -5,19 +5,8 @@ import "remixicon/fonts/remixicon.css";
 
 import "./index.css";
 
-import Header from "./Header";
-import Footer from "./Footer";
-import HomeContent from "./HomeContent";
+import MainLayout  from "./MainLayout";
 
-const App = () => (
-  <div className="text-3xl mx-auto max-w-6xl">
-    <Header />
-    <div className="my-10">
-      <HomeContent />
-    </div>
-    <Footer />
-  </div>
-);
 
 const root = ReactDOM.createRoot(document.getElementById("app") as HTMLElement);
-root.render(<App />);
+root.render(<MainLayout />);

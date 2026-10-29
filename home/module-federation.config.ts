@@ -9,6 +9,7 @@ export const mfConfig = {
     "./Header": "./src/Header.tsx",
     "./Footer": "./src/Footer.tsx",
     "./products": "./src/products.js",
+    "./HomeContent": "./src/HomeContent.tsx",
   },
   shared: ["react", "react-dom"],
 };
